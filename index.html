@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retention Labs — Mehr Umsatz aus deinen bestehenden Membern</title>
+<meta name="description" content="Retention Labs ist das Performance-Studio für Gyms & Fitnessstudios: Wir senken Member-Churn und holen mehr Umsatz aus deiner bestehenden Community — mit Content, der bindet statt nur reicht.">
+<meta property="og:title" content="Retention Labs — Surgical Performance Studio für Gyms">
+<meta property="og:description" content="Weniger Kündigungen. Mehr Umsatz pro Member. Content-Systeme für Gyms, die binden statt nur Reichweite machen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://retentionlabsagency.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b; --bg2:#101013; --card:#141418; --line:#232329;
+  --txt:#f2f2f0; --mut:#9a9aa2; --acc:#ff5c1f; --acc2:#ffb08a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.12;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.acc{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#0a0a0b;font-weight:600;padding:15px 30px;border-radius:10px;transition:.2s;font-size:16.5px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(255,92,31,.35)}
+.btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc);box-shadow:none}
+.tag{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
+
+nav{position:sticky;top:0;z-index:10;background:rgba(10,10,11,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:19px;letter-spacing:-.01em}
+.logo em{color:var(--acc);font-style:normal}
+nav .links{display:flex;gap:28px;font-size:15px;color:var(--mut)}
+nav .links a:hover{color:var(--txt)}
+nav .cta{font-size:14.5px;padding:10px 20px}
+@media(max-width:760px){nav .links{display:none}}
+
+.hero{padding:110px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40%;right:-15%;width:720px;height:720px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,92,31,.16),transparent 62%);pointer-events:none}
+.hero h1{font-size:clamp(38px,6vw,64px);max-width:820px}
+.hero p.sub{margin:26px 0 38px;font-size:20px;color:var(--mut);max-width:640px}
+.hero .row{display:flex;gap:14px;flex-wrap:wrap}
+.hero .fine{margin-top:20px;font-size:14px;color:var(--mut)}
+@media(max-width:520px){
+  .hero h1{font-size:31px}
+  .hero h1 br{display:none}
+  .hero p.sub{font-size:17.5px}
+}
+
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.strip .cell{padding:34px 24px;text-align:center;border-left:1px solid var(--line)}
+.strip .cell:first-child{border-left:none}
+.strip b{display:block;font-family:"Space Grotesk";font-size:30px;color:var(--acc)}
+.strip span{font-size:14.5px;color:var(--mut)}
+@media(max-width:700px){.strip .wrap{grid-template-columns:1fr}.strip .cell{border-left:none;border-top:1px solid var(--line);padding:22px}}
+
+section{padding:96px 0}
+section h2{font-size:clamp(28px,4vw,42px);max-width:720px;margin-bottom:16px}
+section p.lead{color:var(--mut);max-width:640px;font-size:18px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px 28px;transition:.2s}
+.card:hover{border-color:rgba(255,92,31,.45);transform:translateY(-3px)}
+.card .n{font-family:"Space Grotesk";font-weight:700;color:var(--acc);font-size:15px;letter-spacing:.1em}
+.card h3{font-size:21px;margin:14px 0 10px}
+.card p{color:var(--mut);font-size:15.5px}
+
+.steps{margin-top:52px;display:grid;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.step{display:grid;grid-template-columns:88px 1fr;background:var(--card);border-top:1px solid var(--line)}
+.step:first-child{border-top:none}
+.step .num{display:flex;align-items:center;justify-content:center;font-family:"Space Grotesk";font-weight:700;font-size:22px;color:var(--acc);border-right:1px solid var(--line)}
+.step .body{padding:26px 30px}
+.step h3{font-size:19px;margin-bottom:6px}
+.step p{color:var(--mut);font-size:15.5px}
+
+.why{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why ul{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;list-style:none}
+@media(max-width:760px){.why ul{grid-template-columns:1fr}}
+.why li{padding-left:32px;position:relative;color:var(--mut);font-size:16.5px}
+.why li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:5px;
+  background:linear-gradient(135deg,var(--acc),var(--acc2))}
+.why li b{color:var(--txt);font-weight:600}
+
+.cta-end{text-align:center;padding:120px 0}
+.cta-end h2{max-width:none}
+.cta-end p{color:var(--mut);margin:18px auto 40px;max-width:560px}
+.cta-end .mail{display:block;margin-top:22px;font-size:15px;color:var(--mut)}
+.cta-end .mail a{color:var(--acc)}
+
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:14px;color:var(--mut)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a:hover{color:var(--txt)}
+details.imp{max-width:1080px;margin:0 auto;padding:0 24px 40px;color:var(--mut);font-size:13.5px}
+details.imp summary{cursor:pointer;color:var(--mut)}
+details.imp p{margin-top:10px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">Retention<em>Labs</em></a>
+    <div class="links">
+      <a href="#problem">Problem</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#prozess">Prozess</a>
+      <a href="#warum">Warum wir</a>
+    </div>
+    <a class="btn cta" href="mailto:dimi@retentionlabsagency.com?subject=Anfrage%20Retention%20Labs">Gespräch anfragen</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">Surgical Performance Studio · Für Gyms & Studios</span>
+    <h1>Dein Gym verliert jeden Monat Member.<br>Wir <span class="acc">stoppen das.</span></h1>
+    <p class="sub">Neukunden-Ads werden immer teurer. Der profitabelste Umsatz steckt in den Membern, die du schon hast — wir bauen die Content- und Retention-Systeme, die sie halten.</p>
+    <div class="row">
+      <a class="btn" href="mailto:dimi@retentionlabsagency.com?subject=Kostenlose%20Analyse">Kostenlose Retention-Analyse</a>
+      <a class="btn ghost" href="#prozess">So arbeiten wir</a>
+    </div>
+    <p class="fine">Unverbindlich · Antwort innerhalb von 24h · Deutsch oder Englisch</p>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="cell"><b>5–7×</b><span>teurer ist ein Neukunde gegenüber einem gehaltenen Member</span></div>
+    <div class="cell"><b>~50%</b><span>der Neuanmeldungen kündigen im ersten Jahr — meist still</span></div>
+    <div class="cell"><b>+25–95%</b><span>mehr Gewinn sind mit nur 5% besserer Retention drin</span></div>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="wrap">
+    <span class="tag">Das eigentliche Problem</span>
+    <h2>Dein Content macht Reichweite. Aber hält er auch Member?</h2>
+    <p class="lead">Die meisten Studios posten für Fremde: Angebote, Rabatte, Neukunden-Funnels. Und wundern sich, warum die Kündigungen trotzdem reinkommen. Bindung entsteht nicht an der Anmeldetheke — sie entsteht jede Woche danach: im Feed, in der Community, im Gefühl „das ist mein Gym".</p>
+    <div class="grid">
+      <div class="card"><span class="n">SYMPTOM 01</span><h3>Stille Kündiger</h3><p>Member kommen seltener, sagen nichts — und kündigen dann „überraschend". Ohne System merkst du es erst, wenn es zu spät ist.</p></div>
+      <div class="card"><span class="n">SYMPTOM 02</span><h3>Content ohne Plan</h3><p>Mal ein Reel, mal wochenlang nichts. Kein roter Faden, keine Community-Momente, kein Grund zu bleiben.</p></div>
+      <div class="card"><span class="n">SYMPTOM 03</span><h3>Ads-Hamsterrad</h3><p>Jeden Monat teurer werdende Anzeigen, um die Abgänge hinten wieder aufzufüllen. Wachstum sieht anders aus.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="leistungen" style="padding-top:0">
+  <div class="wrap">
+    <span class="tag">Leistungen</span>
+    <h2>Content, der bindet — als System, nicht als Zufall.</h2>
+    <div class="grid">
+      <div class="card"><span class="n">01</span><h3>Retention-Content-System</h3><p>Monatlicher Content-Plan mit klaren Säulen: Member-Stories, Community, Coaching-Wert. Carousels, Reels, Captions — fertig produziert in deiner Brand-Voice.</p></div>
+      <div class="card"><span class="n">02</span><h3>Community & Momentum</h3><p>Formate, die Member aktiv einbinden: Challenges, Erfolgs-Features, Studio-Rituale. Dein Gym wird vom Anbieter zum Zuhause.</p></div>
+      <div class="card"><span class="n">03</span><h3>Klartext-Reporting</h3><p>Monatlicher Report ohne Bullshit-Metriken: was lief, was gelernt, was als Nächstes. Du siehst genau, wofür du zahlst.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="prozess" style="padding-top:0">
+  <div class="wrap">
+    <span class="tag">Prozess</span>
+    <h2>Von der Analyse zum laufenden System — in 4 Schritten.</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div class="body"><h3>Retention-Analyse (kostenlos)</h3><p>Wir schauen uns dein Studio, deinen Auftritt und deine Member-Journey an — und zeigen dir die 2–3 größten Löcher, durch die Member verschwinden.</p></div></div>
+      <div class="step"><div class="num">2</div><div class="body"><h3>Strategie & Brand-Voice</h3><p>Positionierung, Content-Säulen, Tonalität. Einmal sauber definiert, damit jeder Post nach deinem Gym klingt — nicht nach Agentur.</p></div></div>
+      <div class="step"><div class="num">3</div><div class="body"><h3>Produktion & Publishing</h3><p>Wir produzieren und veröffentlichen laufend. Du gibst frei — den Rest übernimmt unser System. Dein Aufwand: Minuten pro Woche, nicht Stunden.</p></div></div>
+      <div class="step"><div class="num">4</div><div class="body"><h3>Messen & Nachschärfen</h3><p>Jeden Monat: Zahlen, Erkenntnisse, Anpassung. Retention ist kein Projekt, sondern ein Muskel — wir trainieren ihn mit dir.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="warum" class="why">
+  <div class="wrap">
+    <span class="tag">Warum Retention Labs</span>
+    <h2>Spezialisiert. Systematisch. Ohne Agentur-Theater.</h2>
+    <ul>
+      <li><b>Nur Fitness.</b> Wir machen keine Zahnärzte und keine Autohäuser — wir kennen Gym-Member und ihre Kündigungsgründe.</li>
+      <li><b>Retention vor Reichweite.</b> Likes von Fremden zahlen keine Miete. Bleibende Member schon.</li>
+      <li><b>System statt Bauchgefühl.</b> Eigene Produktions-Pipeline: konstante Qualität, konstanter Output, keine Launen.</li>
+      <li><b>Klare Zahlen.</b> Monatsreport mit dem, was zählt — und ehrlichen Empfehlungen, auch wenn sie unbequem sind.</li>
+      <li><b>Schlank & direkt.</b> Du sprichst mit dem, der die Arbeit macht. Keine Account-Manager-Kette.</li>
+      <li><b>Fair kalkuliert.</b> Ein Bruchteil dessen, was dich jeden Monat die stillen Kündiger kosten.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta-end">
+  <div class="wrap">
+    <span class="tag">Nächster Schritt</span>
+    <h2>Finde raus, wo dein Studio Member verliert.</h2>
+    <p>Kostenlose Retention-Analyse: 2–3 konkrete Hebel für dein Gym, keine Verkaufsshow. Wenn's passt, arbeiten wir zusammen — wenn nicht, nimmst du die Erkenntnisse einfach mit.</p>
+    <a class="btn" href="mailto:dimi@retentionlabsagency.com?subject=Kostenlose%20Retention-Analyse&body=Hi%20Dimi%2C%0A%0AStudio%3A%20%0AStadt%3A%20%0AInstagram%3A%20%0A%0AWorum%20geht's%3A%20">Analyse anfragen</a>
+    <span class="mail">Oder direkt: <a href="mailto:dimi@retentionlabsagency.com">dimi@retentionlabsagency.com</a> · <a href="https://instagram.com/retentionlabs" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/company/retention-labs" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Retention Labs · Thessaloniki, Griechenland</span>
+    <span><a href="mailto:dimi@retentionlabsagency.com">Kontakt</a> · <a href="#impressum" onclick="document.getElementById('impressum').open=true">Impressum</a></span>
+  </div>
+</footer>
+<details class="imp" id="impressum">
+  <summary>Impressum & Datenschutz</summary>
+  <p><b>Angaben gemäß § 5 TMG / Art. 13 DSGVO:</b><br>
+  Retention Labs — Inhaber: Dimitrios Kapaonis<br>
+  Thessaloniki, Griechenland<br>
+  E-Mail: dimi@retentionlabsagency.com</p>
+  <p><b>Datenschutz:</b> Diese Website setzt keine Cookies und kein Tracking ein. Bei Kontakt per E-Mail werden deine Angaben ausschließlich zur Bearbeitung der Anfrage verwendet und nicht an Dritte weitergegeben. Schriftarten werden über Google Fonts geladen; dabei wird deine IP-Adresse an Google übertragen.</p>
+</details>
+
+</body>
+</html>
